@@ -1,0 +1,7 @@
+.traits{
+    background-image: url("../../assests/Home/image3.png");
+  }
+  .white-image {
+    filter: brightness(0) invert(1);
+  }
+  

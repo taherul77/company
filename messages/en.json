@@ -1,0 +1,12 @@
+{
+  "Index": {
+    "title": "Hello world!"
+  },
+  "Navbar": {
+    "solutions": "Solutions",
+    "expertise": "Expertise",
+    "about": "About Us",
+    "business": "Business Divisions",
+    "revolution": "Industrial Revolution"
+  }
+}

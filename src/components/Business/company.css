@@ -1,0 +1,29 @@
+.image-container {
+  position: relative;
+  overflow: hidden;
+  height: 500px; /* Set a fixed height for both containers */
+}
+
+.image-container:hover img:not(.logo-img) {
+  opacity: 0.5;
+  transform: rotateX(180deg); /* Rotate the image on hover */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: rotateX(180deg); /* Initially rotate the content */
+  transition: opacity 0.5s, transform 0.5s; /* Add transition for smooth effect */
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+  transform: rotateX(0deg); /* Rotate the content back to its original position */
+}
