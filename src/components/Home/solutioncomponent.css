@@ -1,48 +1,343 @@
-.hexagon {
-    position: relative;
-    width: 100px;
-    height: 57.74px;
-    background-color: #ffffff;
-    margin: 28.87px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    transition: transform 0.3s;
-    cursor: pointer;
-  }
+
+
+
+.text-container {
+  white-space: nowrap; /* Prevents text wrapping */
+  width: 100%;
+}
+
+
+.text-container h3 {
+  display: inline-block;
   
-  .hexagon:before,
-  .hexagon:after {
-    content: "";
-    position: absolute;
-    width: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-  }
-  
-  .hexagon:before {
-    bottom: 100%;
-    border-bottom: 28.87px solid #ffffff;
-  }
-  
-  .hexagon:after {
-    top: 100%;
-    width: 0;
-    border-top: 28.87px solid #ffffff;
-  }
-  
-  .hexagon img {
-    width: 60px;
-    height: 60px;
-  }
-  
-  .hexagon span {
-    position: absolute;
-    bottom: -30px;
-    width: 150px;
-    font-size: 14px;
-    color: #ffffff;
-    white-space: nowrap;
-  }
-  
+}
+
+
+/* General hexagon styles */
+.hex,
+.hex1,
+.hex2,
+.hex3,
+.hex4,
+.hex5,
+.hex6,
+.hex7,
+.hex8 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  transition: width 2s, height 2s, transform 2s;
+  transform: rotate(30deg);
+}
+
+.hex::before,
+.hex1::before,
+.hex2::before,
+.hex3::before,
+.hex4::before,
+.hex5::before,
+.hex6::before,
+.hex7::before,
+.hex8::before,
+.hex::after,
+.hex1::after,
+.hex2::after,
+.hex3::after,
+.hex4::after,
+.hex5::after,
+.hex6::after,
+.hex7::after,
+.hex8::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  clip-path: inherit;
+}
+
+.hex::before,
+.hex1::before,
+.hex2::before,
+.hex3::before,
+.hex4::before,
+.hex5::before,
+.hex6::before,
+.hex7::before,
+.hex8::before {
+  background: #000;
+}
+
+.hex::after,
+.hex1::after,
+.hex2::after,
+.hex3::after,
+.hex4::after,
+.hex5::after,
+.hex6::after,
+.hex7::after,
+.hex8::after {
+  background: rgb(255, 255, 255);
+  inset: 4px;
+}
+
+.hex-inner,
+.hex-inner1,
+.hex-inner2,
+.hex-inner3,
+.hex-inner3,
+.hex-inner4,
+.hex-inner5,
+.hex-inner6,
+.hex-inner7,
+.hex-inner8 {
+  position: relative;
+  width: 70%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  transform: rotate(-30deg);
+  margin: 2rem;
+}
+
+.solution-image,
+.solution-image1,
+.solution-image2,
+.solution-image3,
+.solution-image4,
+.solution-image5,
+.solution-image6,
+.solution-image7,
+.solution-image8 {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: opacity 2s;
+  position: absolute;
+}
+
+.solution-image-hover,
+.solution-image-hover1,
+.solution-image-hover2,
+.solution-image-hover3,
+.solution-image-hover4,
+.solution-image-hover5,
+.solution-image-hover6,
+.solution-image-hover7,
+.solution-image-hover8 {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: opacity 2s;
+  opacity: 0;
+  position: absolute;
+  margin: 2rem;
+}
+
+/* Specific hover-trigger hex styles */
+.hover-trigger:hover ~ .hex,
+.hover-trigger:hover ~ .hex1,
+.hover-trigger:hover ~ .hex2,
+.hover-trigger:hover ~ .hex3,
+.hover-trigger:hover ~ .hex4,
+.hover-trigger:hover ~ .hex5,
+.hover-trigger:hover ~ .hex6,
+.hover-trigger:hover ~ .hex7,
+.hover-trigger:hover ~ .hex8 {
+  --s: 400px;
+}
+
+.hover-trigger:hover ~ .hex3 .solution-image3 {
+  opacity: 0;
+}
+
+.hover-trigger:hover ~ .hex3 .solution-image-hover3 {
+  opacity: 1;
+}
+.hover-trigger:hover ~ .hex .solution-image {
+  opacity: 0;
+}
+
+.hover-trigger:hover ~ .hex .solution-image-hover {
+  opacity: 1;
+}
+.hover-trigger:hover ~ .hex1 .solution-image1 {
+  opacity: 0;
+}
+
+.hover-trigger:hover ~ .hex1 .solution-image-hover1 {
+  opacity: 1;
+}
+.hover-trigger:hover ~ .hex2 .solution-image2 {
+  opacity: 0;
+}
+
+.hover-trigger:hover ~ .hex2 .solution-image-hover2 {
+  opacity: 1;
+}
+.hover-trigger:hover ~ .hex4 .solution-image4 {
+  opacity: 0;
+}
+
+.hover-trigger:hover ~ .hex4 .solution-image-hover4 {
+  opacity: 1;
+}
+.hover-trigger:hover ~ .hex5 .solution-image5 {
+  opacity: 0;
+}
+
+.hover-trigger:hover ~ .hex5 .solution-image-hover5 {
+  opacity: 1;
+}
+.hover-trigger:hover ~ .hex6 .solution-image6 {
+  opacity: 0;
+}
+
+.hover-trigger:hover ~ .hex6 .solution-image-hover6 {
+  opacity: 1;
+}
+.hover-trigger:hover ~ .hex7 .solution-image7 {
+  opacity: 0;
+}
+
+.hover-trigger:hover ~ .hex7 .solution-image-hover7 {
+  opacity: 1;
+}
+.hover-trigger:hover ~ .hex8 .solution-image8 {
+  opacity: 0;
+}
+
+.hover-trigger:hover ~ .hex8 .solution-image-hover8 {
+  opacity: 1;
+}
+
+.hex {
+  --s: 120px;
+  width: var(--s);
+  height: calc(0.866 * var(--s));
+  z-index: 5;
+}
+
+.hex1 {
+  --s: 280px;
+  width: var(--s);
+  height: calc(0.866 * var(--s));
+}
+
+.hex2 {
+  --s: 180px;
+  width: var(--s);
+  height: calc(0.866 * var(--s));
+  z-index: 2;
+}
+
+.hex3 {
+  --s: 120px;
+  width: var(--s);
+  height: calc(0.866 * var(--s));
+  z-index: 5;
+}
+
+.hex4 {
+  --s: 110px;
+  width: var(--s);
+  height: calc(0.866 * var(--s));
+}
+
+.hex5 {
+  --s: 100px;
+  width: var(--s);
+  height: calc(0.866 * var(--s));
+}
+
+.hex6 {
+  --s: 90px;
+  width: var(--s);
+  height: calc(0.866 * var(--s));
+}
+
+.hex7 {
+  --s: 140px;
+  width: var(--s);
+  height: calc(0.866 * var(--s));
+  z-index: 2;
+}
+
+.hex8 {
+  --s: 90px;
+  width: var(--s);
+  height: calc(0.866 * var(--s));
+}
+
+
+
+
+.relative1:hover .hex {
+  top: 150px;
+  left: 150px;
+  transform: translate(-50%, -50%) rotate(30deg);
+  z-index: 50;
+}
+.relative2:hover .hex1 {
+  top: 200px;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(30deg);
+  z-index: 50;
+}
+.relative3:hover .hex2 {
+  top: 200px;
+  left: 150px;
+  transform: translate(-50%, -50%) rotate(30deg);
+  z-index: 50;
+}
+.relative4:hover .hex3 {
+  top: 200px;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(30deg);
+  z-index: 50;
+}
+.relative5:hover .hex4 {
+  top: 200px;
+  left: 180px;
+  transform: translate(-50%, -50%) rotate(30deg);
+  z-index: 50;
+}
+.relative6:hover .hex5 {
+  top: 200px;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(30deg);
+  z-index: 50;
+}
+.relative7:hover .hex6 {
+  top: 250px;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(30deg);
+  z-index: 50;
+}
+.relative8:hover .hex7 {
+  top: 300px;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(30deg);
+  z-index: 50;
+}
+.relative9:hover .hex8 {
+  top: 280px;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(30deg);
+  z-index: 50;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

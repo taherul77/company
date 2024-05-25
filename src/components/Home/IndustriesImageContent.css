@@ -1,0 +1,30 @@
+
+  .section1 {
+    overflow: hidden;
+    position: relative;
+    --v-offset: 80px;
+    --curve-height: 100px;
+    
+  }
+  .section1:before,
+  .section1:after {
+    content: "";
+    display: block;
+    background:white;
+    width: calc(100vw  * var(--v-offset));
+    height: var(--curve-height);
+    position: absolute;
+    border-radius: 50%;
+    left: calc(-1 * var(--v-offset));
+    right: calc(-1 * var(--v-offset));
+  }
+  .section1:before {
+    top: calc(-0.6 * var(--curve-height));
+  }
+  .section1:after {
+    bottom: calc(-0.6 * var(--curve-height));
+  }
+ 
+  
+
+ 

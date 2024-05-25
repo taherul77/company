@@ -1,0 +1,31 @@
+
+  
+  section {
+    
+    overflow: hidden;
+    position: relative;
+    --v-offset: 60px;
+    --curve-height: 120px;
+  }
+  section:before,
+  section:after {
+    content: "";
+    display: block;
+    background: black;
+    width: calc(100vw + 2 * var(--v-offset));
+    height: var(--curve-height);
+    position: absolute;
+    border-radius: 50%;
+    left: calc(-1 * var(--v-offset));
+    right: calc(-1 * var(--v-offset));
+  }
+  section:before {
+    top: calc(-0.6 * var(--curve-height));
+  }
+  section:after {
+    bottom: calc(-0.6 * var(--curve-height));
+  }
+ 
+  
+
+ 

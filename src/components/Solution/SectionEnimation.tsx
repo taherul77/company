@@ -13,11 +13,11 @@ const SectionEnimation = ({ children,className2,translateX }: SectionEnimationPr
           style={{
             transform: isInView ? "none" : `${translateX}`,
             opacity: isInView ? 1 : 0,
-            transition: "all 7s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+            transition: "all 2s cubic-bezier(0.17, 0.55, 0.55, 1) 0.10s",
           }}
           className={`${className2}`}
         >
-          <div className="w-[700px]">
+          <div className="max-w-[700px]">
           {children}
           </div>
           

@@ -43,7 +43,7 @@ const CompanyComponent = () => {
             <div className="image-container">
               <Image src={images2} className="h-[450px] w-[500px]" height={500} width={500} alt="" />
               <div className="overlay">
-                <div className="bg-white flex flex-col justify-center items-center border border-black h-[450px]">
+                <div className="bg-white flex flex-col justify-center items-center border border-black h-[480px] md:h-[450px]">
                   <div className="flex flex-col justify-center items-center text-md text-black ">
                     <Image
                       src={atiUsaLogo}

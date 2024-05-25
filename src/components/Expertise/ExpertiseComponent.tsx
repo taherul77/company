@@ -25,7 +25,7 @@ const ExpertiseComponent = () => {
         className="content-container bg-center bg-cover bg-no-repeat"
       >
         <ExpertiessWrapper>
-          <div className="flex gap-10 justify-center items-center  py-8">
+          <div className="flex flex-col md:flex-row gap-10 justify-center items-center  py-8">
             <ExpertiseSectionImageLeft
               img={images1}
             ></ExpertiseSectionImageLeft>
@@ -38,7 +38,7 @@ const ExpertiseComponent = () => {
               }
             ></ExpertiseSection>
           </div>
-          <div className="flex  gap-10 justify-center items-center  py-8 ">
+          <div className="flex flex-col-reverse md:flex-row gap-10 justify-center items-center  py-8 ">
             <ExpertiseSection
               title={"IT"}
               subTitle={"consulting"}
@@ -50,7 +50,7 @@ const ExpertiseComponent = () => {
               img={images2}
             ></ExpertiseSectionImageRight>
           </div>
-          <div className="flex gap-10 justify-center items-center py-8">
+          <div className="flex flex-col md:flex-row  gap-10 justify-center items-center py-8">
             <ExpertiseSectionImageLeft
               img={images3}
             ></ExpertiseSectionImageLeft>
@@ -63,7 +63,7 @@ const ExpertiseComponent = () => {
               }
             ></ExpertiseSection>
           </div>
-          <div className="flex gap-10 justify-center items-center py-8 ">
+          <div className="flex flex-col-reverse md:flex-row  gap-10 justify-center items-center py-8 ">
             <ExpertiseSection
               title={"Networking "}
               subTitle={"Solutions"}
@@ -75,7 +75,7 @@ const ExpertiseComponent = () => {
               img={images4}
             ></ExpertiseSectionImageRight>
           </div>
-          <div className="flex gap-10 justify-center items-center  py-8">
+          <div className="flex flex-col md:flex-row  gap-10 justify-center items-center  py-8">
             <ExpertiseSectionImageLeft
               img={images5}
             ></ExpertiseSectionImageLeft>
@@ -88,7 +88,7 @@ const ExpertiseComponent = () => {
               }
             ></ExpertiseSection>
           </div>
-          <div className="flex gap-10 justify-center items-center  py-8">
+          <div className="flex flex-col-reverse md:flex-row  gap-10 justify-center items-center  py-8">
             <ExpertiseSection
               title={"Mobile App  "}
               subTitle={"Development"}
@@ -100,7 +100,7 @@ const ExpertiseComponent = () => {
               img={images6}
             ></ExpertiseSectionImageRight>
           </div>
-          <div className="flex gap-10 justify-center items-center  py-8">
+          <div className="flex flex-col md:flex-row gap-10 justify-center items-center  py-8">
             <ExpertiseSectionImageLeft
               img={images7}
             ></ExpertiseSectionImageLeft>
@@ -113,7 +113,7 @@ const ExpertiseComponent = () => {
               }
             ></ExpertiseSection>
           </div>
-          <div className="flex gap-10 justify-center items-center  py-8 ">
+          <div className="flex flex-col-reverse md:flex-row gap-10 justify-center items-center  py-8 ">
             <ExpertiseSection
               title={"Data"}
               subTitle={"Analytics"}

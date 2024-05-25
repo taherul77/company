@@ -8,20 +8,25 @@ import Brand from "./Brand";
 import Industries from "./Industries";
 import SolutionsComponent from "./SolutionsComponent";
 
+
 export default function HomeComponent() {
   return (
     <>
       <HomeBanner></HomeBanner>
-      <div className="traits bg-center bg-cover bg-no-repeat">
-        <div className="flex flex-col items-center py-10 text-white">
+      <div className="traits bg-cover bg-no-repeat">
+        <div className="flex flex-col items-center text-white pt-12">
           <Wrapper>
             <SectionTitle
               heading={"SOLUTIONS"}
               className="text-3xl font-bold uppercase text-center text-white sm:text-4xl"
             ></SectionTitle>
           </Wrapper>
-
+        </div>
+        <div className="flex flex-col items-center text-white py-10">
+        <Wrapper>
           <SolutionsComponent></SolutionsComponent>
+        </Wrapper>
+    
         </div>
       </div>
       <Industries></Industries>
@@ -39,6 +44,12 @@ export default function HomeComponent() {
       <Wrapper>
         <Brand></Brand>
       </Wrapper>
+     
+
+
+
+
+    
     </>
   );
 }

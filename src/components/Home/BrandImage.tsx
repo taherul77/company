@@ -3,11 +3,33 @@ import { BrandImageProps } from "@/types";
 import Image from "next/image";
 import React, { useState } from "react";
 
-const BrandImage = ({ image }: BrandImageProps) => {
+const BrandImage = ({ hoverImage,normalImage }: BrandImageProps) => {
   const [hovered, setHovered] = useState(false);
 
   return (
+
+    <>
+    
     <div
+      className="flex justify-center items-center border border-gray-300 hover:border-black"
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+    >
+      <div
+        className="relative cursor-pointer"
+        style={{ width: "180px", height: "180px", overflow: "hidden" }}
+      >
+        <Image
+          src={hovered ? hoverImage : normalImage}
+          fill
+          alt="Brand Logo"
+          
+        />
+      </div>
+    </div>
+    
+    
+    {/* <div
       className="flex justify-center items-center border border-gray-300 hover:border-black"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
@@ -25,7 +47,9 @@ const BrandImage = ({ image }: BrandImageProps) => {
           alt={""}
         />
       </div>
-    </div>
+    </div> */}
+    </>
+  
   );
 };
 

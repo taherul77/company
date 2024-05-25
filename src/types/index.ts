@@ -60,6 +60,7 @@ export interface SectionEnimationProps{
   translateX?:string
 }
 export interface BrandImageProps{
-  image?:any
+  hoverImage?:any;
+  normalImage?:any
 }
 

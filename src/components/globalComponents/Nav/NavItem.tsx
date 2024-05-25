@@ -12,7 +12,7 @@ export default function NavItem() {
         <Link
           className={`link ${
             pathname === `/${locale}/solutions`
-              ? " flex items-center px-4 active underline  underline-offset-8 text-xl"
+              ? "flex items-center px-4 active underline underline-offset-8 font-bold"
               : "flex items-center hover:underline underline-offset-8 px-4"
           }`}
           href={`/${locale}/solutions`}
@@ -24,7 +24,7 @@ export default function NavItem() {
         <Link
           className={`link ${
             pathname === `/${locale}/expertise`
-              ? " flex items-center px-4 active underline  underline-offset-8 text-xl"
+              ? " flex items-center px-4 active underline  underline-offset-8 font-bold"
               : "flex items-center hover:underline underline-offset-8 px-4"
           }`}
           href={`/${locale}/expertise`}
@@ -36,7 +36,7 @@ export default function NavItem() {
         <Link
           className={`link ${
             pathname === `/${locale}/about`
-              ? " flex items-center px-4 active underline  underline-offset-8 text-xl"
+              ? "flex items-center px-4 active underline  underline-offset-8 font-bold"
               : "flex items-center hover:underline underline-offset-8 px-4"
           }`}
           href={`/${locale}/about`}
@@ -48,7 +48,7 @@ export default function NavItem() {
         <Link
           className={`link ${
             pathname === `/${locale}/business`
-              ? " flex items-center px-4 active underline  underline-offset-8 text-xl"
+              ? "flex items-center px-4 active underline underline-offset-8 font-bold"
               : "flex items-center hover:underline underline-offset-8 px-4"
           }`}
           href={`/${locale}/business`}

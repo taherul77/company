@@ -30,7 +30,7 @@ const SolutionComponent = () => {
                 }
               ></SolutionSectionTitle>
             </div>
-            <div className="flex flex-col md:flex-row justify-end items-center gap-2 py-8 ">
+            <div className="flex flex-col-reverse md:flex-row justify-end items-center gap-2 py-8 ">
               <SolutionSectionTitle
                 title={"Medical College Management System "}
                 className="flex justify-end"
@@ -53,7 +53,7 @@ const SolutionComponent = () => {
                 }
               ></SolutionSectionTitle>
             </div>
-            <div className="flex justify-end flex-col md:flex-row  items-center gap-2 py-8 ">
+            <div className="flex justify-end flex-col-reverse flex-col md:flex-row  items-center gap-2 py-8 ">
               <SolutionSectionTitle
                 title={"Radiology Information System"}
                 className="flex justify-end"
@@ -77,7 +77,7 @@ const SolutionComponent = () => {
                 }
               ></SolutionSectionTitle>
             </div>
-            <div className="flex justify-end flex-col md:flex-row  items-center gap-2 py-8 ">
+            <div className="flex justify-end flex-col-reverse md:flex-row  items-center gap-2 py-8 ">
               <SolutionSectionTitle
                 title={"Enterprise Resource Planning"}
                 className="flex justify-end"
@@ -100,7 +100,7 @@ const SolutionComponent = () => {
                 }
               ></SolutionSectionTitle>
             </div>
-            <div className="flex justify-end items-center flex-col md:flex-row  gap-2 py-8 ">
+            <div className="flex justify-end items-center flex-col-reverse md:flex-row  gap-2 py-8 ">
               <SolutionSectionTitle
                 title={"Accounts Information System"}
                 className="flex justify-end"
