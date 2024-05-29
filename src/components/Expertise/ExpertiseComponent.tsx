@@ -8,6 +8,7 @@ import ExpertiseSectionImageRight from "./ExpertiseSectionImageRight";
 import ExpertiessWrapper from "./ExpertiessWrapper";
 import "./expertise.css";
 const ExpertiseComponent = () => {
+   // Define image paths for expertise sections
   const images = "/images/expertise1.png";
   const images1 = "/images/image1.jpg";
   const images2 = "/images/image2.jpg";
@@ -20,11 +21,16 @@ const ExpertiseComponent = () => {
 
   return (
     <>
+     {/* Banner Component to display the 'Expertise' banner image and heading */}
       <Banner img={images} heading={"Expertise"}></Banner>
+       {/* Container div to style the content */}
       <div
         className="content-container bg-center bg-cover bg-no-repeat"
       >
+        {/* Wrapper Component to contain expertise sections */}
         <ExpertiessWrapper>
+          {/* Expertise sections */}
+          {/* Each section consists of a title, subtitle, sub-subtitle, and an image */}
           <div className="flex flex-col md:flex-row gap-10 justify-center items-center  py-8">
             <ExpertiseSectionImageLeft
               img={images1}
@@ -38,6 +44,7 @@ const ExpertiseComponent = () => {
               }
             ></ExpertiseSection>
           </div>
+          {/* Repeat the above pattern for other expertise sections */}
           <div className="flex flex-col-reverse md:flex-row gap-10 justify-center items-center  py-8 ">
             <ExpertiseSection
               title={"IT"}

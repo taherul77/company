@@ -20,7 +20,10 @@ const Industries = () => {
             </div>
           </div>
         </Wrapper>
-        <IndustriesImageContent></IndustriesImageContent>
+        <div className="py-8 lg:py-0">
+          <IndustriesImageContent></IndustriesImageContent>
+        </div>
+
         <Wrapper>
           <IndustriesContent></IndustriesContent>
         </Wrapper>

@@ -12,7 +12,20 @@ const IndustriesImageContent = () => {
   return (
     <> 
    
-    <div className="section1 flex flex-col md:flex-row justify-center gap-5  ">
+    <div className="lg:hidden flex flex-col lg:flex-row justify-center items-center gap-5  ">
+        {images.map((image, index) => (
+          <Image
+            src={image}
+            key={index}
+            width={400}
+            height={350}
+            alt="Image"
+           className="p-1"
+           
+          />
+        ))}
+      </div>
+    <div className="hidden lg:flex section1 flex flex-col md:flex-row justify-center items-center gap-5  ">
         {images.map((image, index) => (
           <Image
             src={image}

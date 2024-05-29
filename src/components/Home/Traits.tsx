@@ -9,7 +9,7 @@ export default function Traits() {
     <>
       <div className="container flex justify-center flex-col items-center mx-auto ">
         <div
-          className="flex flex-col justify-center w-full divide-y md:flex-row sm:divide-y-0 sm:divide-x
+          className="flex flex-col justify-center w-full divide-y md:flex-row md:divide-y-0 md:divide-x 
            sm:px-8 lg:px-12 xl:px-32 "
         >
           <div className="flex flex-col justify-center w-full divide-y ">

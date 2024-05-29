@@ -5,8 +5,13 @@ module.exports = {
 	  "./public/index.html",
 	],
 	theme: {
-	  extend: {},
-	},
+		extend: {
+		  animation: {
+			'slide-in-left': 'slide-in-left 0.5s ease-out',
+		  },
+		  
+		},
+	  },
 	plugins: [],
   };
   

@@ -14,13 +14,13 @@ const IndustriesContent = () => {
 
   return (
     <div className="flex flex-col lg:flex-row justify-between items-center ">
-      <div className="flex justify-center items-center h-full lg:w-1/2 ">
-        <h1 className="text-2xl lg:text-5xl font-bold text-start uppercase gradient-text">
+      <div className="flex justify-center items-center h-full lg:w-1/2 mb-5 lg:mb-0 ">
+        <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-start uppercase gradient-text">
           Industries & Expertise
         </h1>
       </div>
       <div className="flex flex-col  h-full lg:w-1/2  ">
-        <div className="flex  gap-2 hidden lg:flex">
+        <div className="flex justify-center gap-2 flex-wrap py-4 lg:py-0">
           {images.map((image, index) => (
             <div key={index} className="flex flex-col flex-wrap justify-center items-center text-[#15656A] ">
               <div className="m-2 rounded-full overflow-hidden  border-2 border-[#15656A]">

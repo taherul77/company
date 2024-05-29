@@ -36,7 +36,7 @@ export default function NavItem() {
         <Link
           className={`link ${
             pathname === `/${locale}/about`
-              ? "flex items-center px-4 active underline  underline-offset-8 font-bold"
+              ? "flex items-center px-4 active underline underline-offset-8 font-bold"
               : "flex items-center hover:underline underline-offset-8 px-4"
           }`}
           href={`/${locale}/about`}

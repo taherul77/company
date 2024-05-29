@@ -5,7 +5,7 @@ const BrandTopSection = () => {
   return (
     <div className="flex flex-col lg:flex-row justify-center items-center py-5">
       <div className="flex justify-center items-center h-full lg:w-1/2 p-4">
-      <h1 className="text-2xl lg:text-5xl font-bold text-start uppercase gradient-text">
+      <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-start uppercase gradient-text">
           Supported Brand Local & Foreign
         </h1>
       </div>

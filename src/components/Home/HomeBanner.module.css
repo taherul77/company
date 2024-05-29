@@ -1,0 +1,33 @@
+@keyframes blurEffect {
+  0% {
+    transform: scale(1.1);
+    filter: blur(8px);
+  }
+  75% {
+    transform: scale(1.2);
+    filter: blur(0px);
+  }
+  100% {
+    transform: scale(1.2);
+    filter: blur(6px);
+  }
+}
+
+@keyframes zoomEffect {
+  from {
+    transform: scale(0.7);
+  }
+  to {
+    transform: scale(1);
+  }
+
+ 
+}
+
+.blur {
+  animation: blurEffect 5s forwards;
+}
+
+.zoom {
+  animation: zoomEffect 5s forwards;
+}

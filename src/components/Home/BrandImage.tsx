@@ -16,7 +16,7 @@ const BrandImage = ({ hoverImage,normalImage }: BrandImageProps) => {
       onMouseLeave={() => setHovered(false)}
     >
       <div
-        className="relative cursor-pointer"
+        className="relative "
         style={{ width: "180px", height: "180px", overflow: "hidden" }}
       >
         <Image
